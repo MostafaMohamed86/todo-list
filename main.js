@@ -30,7 +30,11 @@ function saveData(){
 function showData(){
     listContainer.innerHTML = localStorage.task;
 }
+if(listContainer.innerHTML == undefined){
+    listContainer.innerHTML = "";
+}
 showData();
+
 
 
 
