@@ -7,17 +7,26 @@
     <title>TodoList</title>
 </head>
 <body>
-        <div class="container"> <!-- the whole app -->
-        <div class="todo-app"> <!-- app container -->
-            <h2>To-Do List <img src="/images/icon.png"></h2>
-            <div class="row"> <!-- input and button container -->
-                <input type="text" id="input-box" placeholder="Add Your Text">
-                <button  onclick="addTask()">Add</button>
-            </div>
-            <ul id="list-container"></ul>
+<div class="container">
+    <div class="stats-container">
+    <div class="details">
+        <h1>Todo App</h1>
+        <p>keep it up!</p>
+        <div id="progressBar">
+            <div id="progress"></div>
         </div>
     </div>
+        <div class="stats-numbers"> 
+            <p id="numbers">0 / 0</p>
+        </div>
+    </div>
+    <form action="">
+        <input type="text" id="taskInput" placeholder="Write your task">
+        <button id="submit" type="submit">+</button>
+    </form>
+    <ul id="task-list"></ul>
+</div>
     <script src="main.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </body>
 </html>
